@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dropbox Updater</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/dpb1.png</normaloff>images/dpb1.png</iconset>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>-40</y>
+      <width>441</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#background{
+      background-color: #ffffff;
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="update">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>220</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#update{
+    background-color: #3098e8;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: 'Signika,sans-serif';
+    font-size: 15px;
+    z-index: 1;
+}
+
+QPushButton#update:hover{
+    background-color: #4aacf7;
+}</string>
+    </property>
+    <property name="text">
+     <string>Aggiorna files</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="header">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>371</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#header{
+     background-image: url(update.png);
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/uploader1.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dropbox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#dropbox{
+     background-color: #3098e8;
+     border-radius: 15px;
+     border: solid 1px;
+     color: #ffffff;
+     font-family: sans-serif;
+    font-size: 15px;
+    z-index: 1;
+}
+
+
+QPushButton#dropbox:hover{
+    background-color: #4aacf7;
+}</string>
+    </property>
+    <property name="text">
+     <string>Dropbox</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>220</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#exit{
+     background-color: #3098e8;
+     border-radius: 15px;
+     border: solid 1px;
+     color: #ffffff;
+     font-family: sans-serif;
+    font-size: 15px;
+    z-index: 1;
+}
+
+
+QPushButton#exit:hover{
+    background-color: #4aacf7;
+}</string>
+    </property>
+    <property name="text">
+     <string>Uscita</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
